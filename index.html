@@ -1,105 +1,150 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Palin - Juegos Mapuche</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palin - Juegos Mapuche</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-
-<body>
-  <header>
-  <div class="branding">
-    <img src="img/logo.png" alt="Logo Palin" class="logo">
-  </div>
-</header>
-     <nav class="nav-menu">
-        <ul class="nav-links">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Juegos</a></li>
-            <li><a href="#">Categorías</a></li>
-            <li><a href="#">Sobre Nosotros</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
+  <body>
+    <header>
+      <div class="branding">
+        <img src="img/logo.png" alt="Logo Palin" class="logo" />
+      </div>
+    </header>
+    <nav class="nav-menu">
+      <input type="checkbox" id="menu-button" />
+      <label for="menu-button" id="menu-label"> ☰ </label>
+      <ul class="nav-links">
+        <li><a class="nav-item" href="index.html">Inicio</a></li>
+        <li><a class="nav-item">Juegos</a></li>
+        <li class="tooltip-container">
+          <a class="tooltip-activator nav-item">Categorías</a>
+          <div class="tooltip-list">
+            <ul>
+              <li>
+                <a href="categoria1.html">Estrategia</a>
+              </li>
+              <li>
+                <a href="categoria2.html">Familiar</a>
+              </li>
+              <li>
+                <a href="categoria3.html">Rol</a>
+              </li>
+              <li>
+                <a href="categoria4.html">Wargames</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a class="nav-item">Sobre Nosotros</a></li>
+        <li><a class="nav-item">Contacto</a></li>
+      </ul>
     </nav>
 
-
-<div class="banner">
-  <p>Descubre la estrategia, cultura y diversión en cada caja. ¡Haz tuyo un juego hoy!</p>
-</div>
-
-
-  <main class="categorias">
-    <a href="categoria1.html" class="categoria">
-      <img src="https://kokua.es/wp-content/uploads/2021/05/Scythe-juego-de-mesa-de-estrategia.jpg" alt="Estrategia">
-      <h2>Estrategia</h2>
-      <button class="ver-mas">Ver más</button>
-    </a>
-    <a href="categoria2.html" class="categoria">
-      <img src="https://compartir.coop/sites/default/files/styles/wide/public/2025-01/juegos-de-mesa.webp?itok=_DynT3AH" alt="Familiar">
-      <h2>Familiar</h2>
-      <button class="ver-mas">Ver más</button>
-    </a>
-    <a href="categoria3.html" class="categoria">
-      <img src="https://assets.corvusbelli.net/corvusweb/img/blog/xl/2707-roleplaying/mesa.jpg" alt="Educativo">
-      <h2>Rol</h2>
-      <button class="ver-mas">Ver más</button>
-    </a>
-    <a href="categoria4.html" class="categoria">
-      <img src="https://i0.wp.com/www.eljugadorperdido.com.ar/wp-content/uploads/2019/12/dized_board_game_companion_app_4.jpg?fit=960%2C615&ssl=1" alt="Infantil">
-      <h2>WarGames</h2>
-      <button class="ver-mas">Ver más</button>
-    </a>
-  </main>
-
-  <section class="nostalgicos">
-  <h2>Juegos Nostálgicos</h2>
-  <div class="lista-nostalgicos">
-    <div class="juego-nostalgico">
-    <img src="https://photos1.blogger.com/x/blogger/7981/39/400/958214/el%20Gran%20Santiago.jpg" alt="Gran Santiago">
-    <p class="titulo-juego">El Gran Santiago</p>
-    <p class="descripcion-juego">
-        Clásico juego de mesa que combina estrategia y suerte. Ideal para jugar en familia o con amigos.
-        <p><b>$6.390 CLP</b></p>
-    </p>
+    <div class="banner">
+      <p>
+        Descubre la estrategia, cultura y diversión en cada caja. ¡Haz tuyo un
+        juego hoy!
+      </p>
     </div>
-    <div class="juego-nostalgico">
-    <img src="https://http2.mlstatic.com/D_NQ_NP_846882-MLC69433443408_052023-O-ludo-magnetico-juego-de-mesa-tablero-30-x-30cm-funny.webp" alt="Ludo">
-    <p class="titulo-juego">Ludo</p>
-    <p class="descripcion-juego">
-        Juego de mesa estratégico de 2 a 4 jugadores, donde compiten con cuatro fichas de principio a fin según las tiradas de un dado
-        <p><b>$4.490 CLP</b></p>
-    </p>
-    </div>
-    <div class="juego-nostalgico">
-    <img src="https://juguetestoday.com/wp-content/uploads/2024/05/8000045404-1-jpg.webp" alt="Lota">
-    <p class="titulo-juego">Lota</p>
-    <p class="descripcion-juego">
-        Juego clásico ideal para disfrutar en familia y fomentar la interacción entre los más pequeños.
-        <p><b>$7.990 CLP</b></p>
-    </p>
-    </div>
-    <div class="juego-nostalgico">
-    <img src="https://lapizarralibreria.cl/wp-content/uploads/2020/07/domino.jpg" alt="Domino">
-    <p class="titulo-juego">Dominó</p>
-    <p class="descripcion-juego">
-        Disfruta de horas de diversión y entretenimiento con el Juego de Mesa Dominó en Caja de Madera, un clásico que nunca pasa de moda.
-        <p><b>$4.490 CLP</b></p>
-    </p>
-    </div>
-  </div>
-</section>
 
+    <main class="categorias">
+      <a href="categoria1.html" class="categoria">
+        <img
+          src="https://kokua.es/wp-content/uploads/2021/05/Scythe-juego-de-mesa-de-estrategia.jpg"
+          alt="Estrategia"
+        />
+        <h2>Estrategia</h2>
+        <button class="ver-mas">Ver más</button>
+      </a>
+      <a href="categoria2.html" class="categoria">
+        <img
+          src="https://compartir.coop/sites/default/files/styles/wide/public/2025-01/juegos-de-mesa.webp?itok=_DynT3AH"
+          alt="Familiar"
+        />
+        <h2>Familiar</h2>
+        <button class="ver-mas">Ver más</button>
+      </a>
+      <a href="categoria3.html" class="categoria">
+        <img
+          src="https://assets.corvusbelli.net/corvusweb/img/blog/xl/2707-roleplaying/mesa.jpg"
+          alt="Educativo"
+        />
+        <h2>Rol</h2>
+        <button class="ver-mas">Ver más</button>
+      </a>
+      <a href="categoria4.html" class="categoria">
+        <img
+          src="https://i0.wp.com/www.eljugadorperdido.com.ar/wp-content/uploads/2019/12/dized_board_game_companion_app_4.jpg?fit=960%2C615&ssl=1"
+          alt="Infantil"
+        />
+        <h2>WarGames</h2>
+        <button class="ver-mas">Ver más</button>
+      </a>
+    </main>
 
-   <footer>
-    <p>© 2025 Palin Juegos de Mesa. Todos los derechos reservados.</p>
-    <div class="footer-links">
-      <a href="#">Contacto</a> | 
-      <a href="#">Términos</a> | 
-      <a href="#">Instagram</a>
-    </div>
-  </footer>
+    <section class="nostalgicos">
+      <h2>Juegos Nostálgicos</h2>
+      <div class="lista-nostalgicos">
+        <div class="juego-nostalgico">
+          <img
+            src="https://photos1.blogger.com/x/blogger/7981/39/400/958214/el%20Gran%20Santiago.jpg"
+            alt="Gran Santiago"
+          />
+          <p class="titulo-juego">El Gran Santiago</p>
+          <p class="descripcion-juego">
+            Clásico juego de mesa que combina estrategia y suerte. Ideal para
+            jugar en familia o con amigos.
+          </p>
+          <p><b>$6.390 CLP</b></p>
+        </div>
+        <div class="juego-nostalgico">
+          <img
+            src="https://http2.mlstatic.com/D_NQ_NP_846882-MLC69433443408_052023-O-ludo-magnetico-juego-de-mesa-tablero-30-x-30cm-funny.webp"
+            alt="Ludo"
+          />
+          <p class="titulo-juego">Ludo</p>
+          <p class="descripcion-juego">
+            Juego de mesa estratégico de 2 a 4 jugadores, donde compiten con
+            cuatro fichas de principio a fin según las tiradas de un dado
+          </p>
+          <p><b>$4.490 CLP</b></p>
+        </div>
+        <div class="juego-nostalgico">
+          <img
+            src="https://juguetestoday.com/wp-content/uploads/2024/05/8000045404-1-jpg.webp"
+            alt="Lota"
+          />
+          <p class="titulo-juego">Lota</p>
+          <p class="descripcion-juego">
+            Juego clásico ideal para disfrutar en familia y fomentar la
+            interacción entre los más pequeños.
+          </p>
+          <p><b>$7.990 CLP</b></p>
+        </div>
+        <div class="juego-nostalgico">
+          <img
+            src="https://lapizarralibreria.cl/wp-content/uploads/2020/07/domino.jpg"
+            alt="Domino"
+          />
+          <p class="titulo-juego">Dominó</p>
+          <p class="descripcion-juego">
+            Disfruta de horas de diversión y entretenimiento con el Juego de
+            Mesa Dominó en Caja de Madera, un clásico que nunca pasa de moda.
+          </p>
+          <p><b>$4.490 CLP</b></p>
+        </div>
+      </div>
+    </section>
 
-</body>
+    <footer>
+      <p>© 2025 Palin Juegos de Mesa. Todos los derechos reservados.</p>
+      <div class="footer-links">
+        <a href="#">Contacto</a> | <a href="#">Términos</a> |
+        <a href="#">Instagram</a>
+      </div>
+    </footer>
+  </body>
 </html>
