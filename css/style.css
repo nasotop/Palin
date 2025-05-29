@@ -127,10 +127,7 @@ header {
 }
 
 .categorias {
-  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  padding: 2rem;
 }
 
 .categoria {
@@ -187,12 +184,10 @@ header {
 }
 
 .nostalgicos {
-  padding: 2rem;
   background: linear-gradient(135deg, #2e2e2e, #d4af35, #000000);
-  color: #f5e9a3;
+  color: #f5e9a3 ;
   text-align: center;
   border-radius: 12px;
-  margin: 2rem;
   box-shadow: 0 10px 20px rgba(212, 175, 53, 0.4);
 }
 
@@ -202,22 +197,18 @@ header {
   text-shadow: 1px 1px 3px #000000;
 }
 
-.lista-nostalgicos {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
+
 
 .juego-nostalgico {
   background: #1f1f1f;
   border: 2px solid #d4af35;
   border-radius: 12px;
   padding: 1rem;
-  width: 175px;
   box-shadow: 0 5px 15px rgba(212, 175, 53, 0.5);
   transition: transform 0.3s ease;
   cursor: pointer;
+  color: #f5e9a3 !important;
+
 }
 
 .juego-nostalgico:hover {
@@ -230,7 +221,7 @@ header {
   border-radius: 8px;
   margin-bottom: 0.7rem;
   height: 230px;
-  width: 175px;
+  width: auto;
 }
 
 .juego-nostalgico p.titulo-juego {
