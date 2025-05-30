@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Palin - Juegos Mapuche</title>
+    <title>Palin - Juegos de Estrategia</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -13,34 +19,61 @@
         <img src="img/logo.png" alt="Logo Palin" class="logo" />
       </div>
     </header>
-    <nav class="nav-menu">
-      <input type="checkbox" id="menu-button" />
-      <label for="menu-button" id="menu-label"> ☰ </label>
-      <ul class="nav-links">
-        <li><a class="nav-item" href="index.html">Inicio</a></li>
-        <li><a class="nav-item" href="#">Juegos</a></li>
-        <li class="tooltip-container">
-          <a class="tooltip-activator nav-item">Categorías</a>
-          <div class="tooltip-list">
-            <ul>
-              <li>
-                <a href="categoria1.html">Estrategia</a>
-              </li>
-              <li>
-                <a href="categoria2.html">Familiar</a>
-              </li>
-              <li>
-                <a href="categoria3.html">Rol</a>
-              </li>
-              <li>
-                <a href="categoria4.html">Wargames</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li><a class="nav-item" href="#">Sobre Nosotros</a></li>
-        <li><a class="nav-item" href="#">Contacto</a></li>
-      </ul>
+
+    <nav class="navbar navbar-expand-md nav-menu justify-content-center">
+      <button
+        class="navbar-toggler menu-button d-inline-block d-md-none p-0"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
+        aria-label="Mostrar menú"
+      >
+        ☰
+      </button>
+
+      <!-- Menú colapsable en <md, expandido en md+ -->
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul
+          class="nav-links align-content-center w-100 navbar-nav ms-auto d-flex justify-content-center flex-wrap p-0 m-0"
+        >
+          <li class="nav-item">
+            <a class="d-inline-block w-100" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item"><a class="d-inline-block w-100">Juegos</a></li>
+          <li class="nav-item">
+            <a
+              class="dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Categorías
+            </a>
+            <div class="dropdown">
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="categoria1.html">Estrategia</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="categoria2.html">Familiar</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="categoria3.html">Rol</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="categoria4.html">Wargames</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="d-inline-block w-100">Sobre Nosotros</a>
+          </li>
+          <li class="nav-item"><a class="d-inline-block w-100">Contacto</a></li>
+        </ul>
+      </div>
     </nav>
 
     <div class="banner">
@@ -51,61 +84,68 @@
     </div>
 
     <main>
-      <section class="nostalgicos">
-        <h2>Estrategia</h2>
-        <div class="lista-nostalgicos">
-          <div class="juego-nostalgico">
-            <img
-              src="https://www.magicsur.cl/25180-home_default/catan-el-juego.jpg"
-              alt="Catan"
-            />
-            <div class="detalle-juego">
-              <p class="titulo-juego">Catan</p>
-              <p class="descripcion-juego">
-                El objetivo del juego es construir pueblos, ciudades y caminos
-                sobre un tablero que es distinto en cada partida
-              </p>
-              <p>
-               Antes: <del>$34.990 CLP</del>
-              </p>
-               <p>
-               Ahora: <b>$30.990 CLP</b>
-              </p>
+      <section class="nostalgicos p-lg-5 p-md-3 pm-sm-1 m-4">
+        <h2 class="fw-bold">Estrategia</h2>
+        <div class="container-fluid">
+          <div
+            class="row justify-content-center row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-4 g-2"
+          >
+            <div class="col d-flex justify-content-center">
+              <div class="juego-nostalgico card w-75">
+                <img
+                  src="https://www.magicsur.cl/25180-home_default/catan-el-juego.jpg"
+                  alt="Catan"
+                />
+                <div class="detalle-juego">
+                  <p class="titulo-juego">Catan</p>
+                  <p class="descripcion-juego">
+                    El objetivo del juego es construir pueblos, ciudades y
+                    caminos sobre un tablero que es distinto en cada partida
+                  </p>
+                  <p>Antes: <del>$34.990 CLP</del></p>
+                  <p>Ahora: <b>$30.990 CLP</b></p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="juego-nostalgico">
-            <img
-              src="https://www.magicsur.cl/11855-home_default/star-realms-chile.jpg"
-              alt="Star Realms"
-            />
-            <div class="detalle-juego">
-              <p class="titulo-juego">Star Realms</p>
-              <p class="descripcion-juego">
-                Trepidante juego de batallas espaciales, que combina la
-                diversión de un juego de construcción de mazos con la
-                interacción de los juegos de cartas de combate
-              </p>
-              <p>
-                <b>$12.990 CLP</b>
-              </p>
+            <div class="col d-flex justify-content-center">
+              <div class="juego-nostalgico card w-75">
+                <img
+                  src="https://www.magicsur.cl/11855-home_default/star-realms-chile.jpg"
+                  alt="Star Realms"
+                />
+                <div class="detalle-juego">
+                  <p class="titulo-juego">Star Realms</p>
+                  <p class="descripcion-juego">
+                    Trepidante juego de batallas espaciales, que combina la
+                    diversión de un juego de construcción de mazos con la
+                    interacción de los juegos de cartas de combate
+                  </p>
+                  <p>
+                    <b>$12.990 CLP</b>
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="juego-nostalgico">
-            <img
-              src="https://www.magicsur.cl/22055-home_default/pylos-mini.jpg"
-              alt="Pylos: Mini"
-            />
-            <div class="detalle-juego">
-              <p class="titulo-juego">Pylos: Mini</p>
-              <p class="descripcion-juego">
-                En Pylos usarás tus esferas de modo estratégico para ir creando
-                cuadrados o filas que te permitan recuperarlas tras haberlas
-                puesto en el tablero
-              </p>
-              <p>
-                <b>$22.990 CLP</b>
-              </p>
+            <div class="col d-flex justify-content-center">
+              <div class="juego-nostalgico card w-75">
+                <img
+                  src="https://www.magicsur.cl/22055-home_default/pylos-mini.jpg"
+                  alt="Pylos: Mini"
+                />
+                <div class="detalle-juego">
+                  <p class="titulo-juego">Pylos: Mini</p>
+                  <p class="descripcion-juego">
+                    En Pylos usarás tus esferas de modo estratégico para ir
+                    creando cuadrados o filas que te permitan recuperarlas tras
+                    haberlas puesto en el tablero
+                  </p>
+                  <p>
+                    <b>$22.990 CLP</b>
+                  </p>
+                </div>
+              </div>
             </div>
+         
           </div>
         </div>
       </section>
@@ -118,5 +158,10 @@
         <a href="#">Instagram</a>
       </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -102,28 +102,34 @@ header {
   z-index: 999;
 }
 
+.navbar .dropdown-toggle {
+  background-color: transparent; /* o el gris oscuro que uses */
+  border: none;
+  box-shadow: none;
+  /* elimina paddings internos si no los quieres: */
+}
 .nav-links {
   list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
   gap: 2rem;
-  flex-wrap: wrap;
 }
 
-.nav-links li a.nav-item {
+.nav-links .nav-item {
   text-decoration: none;
-  color: white;
   font-weight: bold;
-  padding: 0.5rem 1rem;
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-.nav-links li a.nav-item:hover {
+.nav-item a,
+.nav-item .dropdown a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links .nav-item a:hover {
   background: var(--accent-color);
   color: black;
-  border-radius: 8px;
+  border-radius: 3px;
 }
 
 .categorias {
@@ -185,7 +191,7 @@ header {
 
 .nostalgicos {
   background: linear-gradient(135deg, #2e2e2e, #d4af35, #000000);
-  color: #f5e9a3 ;
+  color: #f5e9a3;
   text-align: center;
   border-radius: 12px;
   box-shadow: 0 10px 20px rgba(212, 175, 53, 0.4);
@@ -197,8 +203,6 @@ header {
   text-shadow: 1px 1px 3px #000000;
 }
 
-
-
 .juego-nostalgico {
   background: #1f1f1f;
   border: 2px solid #d4af35;
@@ -208,7 +212,6 @@ header {
   transition: transform 0.3s ease;
   cursor: pointer;
   color: #f5e9a3 !important;
-
 }
 
 .juego-nostalgico:hover {
@@ -264,54 +267,30 @@ footer {
   justify-content: space-between;
 }
 
-.tooltip-container {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip-container .tooltip-list {
-  visibility: hidden;
-  width: fit-content;
+.nav-item .dropdown .dropdown-menu {
   background-color: var(--footer-bg);
   color: #fff;
   text-align: center;
   padding: 8px;
   border-radius: 4px;
-
-  position: absolute;
-  z-index: 1;
-  top: 130%; /* Posición arriba del botón */
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-.tooltip-list ul {
   list-style: none;
-  padding: 2px;
 }
-.tooltip-list ul li a {
-  text-decoration: none;
-  color: white;
-}
-.tooltip-list ul li:hover {
+.nav-item .dropdown .dropdown-menu .dropdown-item:hover {
   background: var(--accent-color);
   color: black;
   border-radius: 1.5px;
 }
 
-.tooltip-container:hover .tooltip-list {
-  visibility: visible;
-  opacity: 1;
-  -webkit-animation: slide-in-top 0.5s cubic-bezier(1, 0, 0, 1);
-  animation: slide-in-top 0.5s cubic-bezier(1, 0, 0, 1);
-}
+/* .nav-item .dropdown .dropdown-menu li a {
+  text-decoration: none;
+  color: white;
+} */
+
 #menu-button {
   display: none;
 }
-#menu-label {
+.menu-button {
   box-sizing: border-box;
-  display: none;
   border: 1px solid white;
   border-radius: 5px;
   width: 30px;
@@ -379,7 +358,7 @@ footer {
     top: 100%;
     right: 0;
     width: 100%;
-    display: none;
+    /* display: none; */
     text-align: center;
     padding-bottom: 30px;
   }

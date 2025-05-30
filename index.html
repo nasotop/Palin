@@ -19,36 +19,63 @@
         <img src="img/logo.png" alt="Logo Palin" class="logo" />
       </div>
     </header>
-    <nav class="nav-menu">
-      <input type="checkbox" id="menu-button" />
-      <label for="menu-button" id="menu-label"> ☰ </label>
-      <ul class="nav-links">
-        <li><a class="nav-item" href="index.html">Inicio</a></li>
-        <li><a class="nav-item">Juegos</a></li>
-        <li class="tooltip-container">
-          <a class="tooltip-activator nav-item">Categorías</a>
-          <div class="tooltip-list">
-            <ul>
-              <li>
-                <a href="categoria1.html">Estrategia</a>
-              </li>
-              <li>
-                <a href="categoria2.html">Familiar</a>
-              </li>
-              <li>
-                <a href="categoria3.html">Rol</a>
-              </li>
-              <li>
-                <a href="categoria4.html">Wargames</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li><a class="nav-item">Sobre Nosotros</a></li>
-        <li><a class="nav-item">Contacto</a></li>
-      </ul>
-    </nav>
+ 
+    <nav class="navbar navbar-expand-md nav-menu justify-content-center">
+      <button
+        class="navbar-toggler menu-button d-inline-block d-md-none p-0"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
+        aria-label="Mostrar menú"
+      >
+        ☰
+      </button>
 
+      <!-- Menú colapsable en <md, expandido en md+ -->
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul
+          class="nav-links align-content-center w-100 navbar-nav ms-auto d-flex justify-content-center flex-wrap p-0 m-0"
+        >
+          <li class="nav-item   "><a class="d-inline-block w-100" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="d-inline-block w-100">Juegos</a></li>
+          <li class="nav-item">
+            <a
+                class="dropdown-toggle "
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Categorías
+              </a>
+            <div class="dropdown">
+              
+              <ul class="dropdown-menu ">
+                <li>
+                  <a class="dropdown-item" href="categoria1.html">Estrategia</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="categoria2.html">Familiar</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="categoria3.html">Rol</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="categoria4.html">Wargames</a>
+                </li>
+              </ul>
+            </div>
+            <!-- <a class="tooltip-activator nav-item">Categorías</a>
+            <div class="tooltip-list">
+            
+            </div> -->
+          </li>
+          <li class="nav-item"><a class="d-inline-block w-100">Sobre Nosotros</a></li>
+          <li class="nav-item"><a class="d-inline-block w-100">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
     <div class="banner">
       <p class="m-3">
         Descubre la estrategia, cultura y diversión en cada caja. ¡Haz tuyo un
@@ -57,7 +84,7 @@
     </div>
 
     <main class="container-fluid p-4">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4  g-4">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
         <div class="col">
           <a href="categoria1.html" class="categoria card h-100 pb-2">
             <img
